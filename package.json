@@ -6,14 +6,22 @@
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "lint": "eslint .",
-    "start": "react-native start",
+    "start": "react-native start --config metro.config.harmony.js",
     "test": "jest",
-    "dev": "react-native bundle-harmony --dev"
+    "dev": "react-native bundle-harmony --dev",
+    "codegen": "react-native codegen-harmony --cpp-output-path ./harmony/Base/entry/src/main/cpp/generated --rnoh-module-path ./harmony/Base/entry/oh_modules/@rnoh/react-native-openharmony"
   },
   "dependencies": {
+    "@react-native-oh-tpl/elements": "^1.3.21-0.1.4",
+    "@react-native-oh-tpl/react-native-gesture-handler": "^2.14.17-rc.0",
+    "@react-native-oh-tpl/react-native-safe-area-context": "^4.7.4-0.2.1",
+    "@react-native-oh-tpl/stack": "^6.4.0-0.0.4",
     "@react-native-oh/react-native-harmony": "^0.72.53-1",
+    "@react-navigation/bottom-tabs": "^6.5.20",
+    "@react-navigation/native": "^6.1.17",
     "react": "18.2.0",
-    "react-native": "0.72.5"
+    "react-native": "0.72.5",
+    "react-native-screens": "^3.29.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
