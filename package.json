@@ -6,7 +6,7 @@
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "lint": "eslint .",
-    "start": "react-native start --config metro.config.harmony.js",
+    "start": "react-native start",
     "test": "jest",
     "dev": "react-native bundle-harmony --dev",
     "codegen": "react-native codegen-harmony --cpp-output-path ./harmony/Base/entry/src/main/cpp/generated --rnoh-module-path ./harmony/Base/entry/oh_modules/@rnoh/react-native-openharmony"
